@@ -1,0 +1,93 @@
+digraph {
+
+    
+    id_1804ae275f3643fe8e7f859aebf72af3 [label="Aesthetic" shape=folder]
+    id_98fd6f0bc6e54405ae8d5d761c3d527c [label="Mission" shape=box]
+    id_b3417654c3df4664aaf34dce39c71767 [label="MAC" shape=box]
+    id_1690821797164536bf325dc5b870fc02 [label="8GB" shape=box]
+    id_f89d72393b184324a0066c447476f40b [label="16GB" shape=box]
+    id_dadb0daa673f44fda25ef3c6403f2921 [label="16c" shape=box]
+    id_c559fca1882e4b2cb6b78e2d4a15636b [label="renewal" shape=box]
+    id_b30f751889104a7d988d20a3c8c8bcb2 [label="DELL" shape=box]
+    id_aa613dce2b704111a2db13cced3e1864 [label="8GB" shape=box]
+    id_c1e1ff941e1f4039a848ba484b5ed395 [label="16GB" shape=box]
+    id_86d72b3f6bef4be29742b0ac8117bf32 [label="32GB" shape=box]
+    id_beec8e92287043dfbb8f4799b6086cf7 [label="16c" shape=box]
+    id_9459de4d65f34970911fefa641bb19b3 [label="64c" shape=box]
+    id_85615f4946544faa8be4aba5c7baf595 [label="renewal" shape=box]
+    id_1d370edd44d142ec8806a2d8832133f8 [label="Base Cost" shape=note]
+    id_60604fd5fdb149c68c90193140cd5249 [label="lifespan" shape=note]
+    id_8e4ac328b3db4b1a9fa00cd2c1ca3b08 [label="Ram" shape=note]
+    id_478eef7b9e7a490da050827e94d94f3b [label="CPU" shape=note]
+    id_c9b3b8a0f24747afafef5ad102483b9a [label="Weight" shape=note]
+    id_cf746e58b4f24387971be83e02bfe3cd [label="Screen Size" shape=note]
+    id_cb1df3e9aa0945d1b9142f914c73f771 [label="Cost" shape=folder]
+    id_9d735d56a99f467cb19323a0ad10d279 [label="Performance" shape=folder]
+    id_58cf0afcc0414101a195d9bffd7fa4f6 [label="2000-3000" shape=box]
+    id_8b14e74e3b5a4051b1467a6b95fcdacd [label="1000-2000" shape=box]
+    id_6bf66f48919b4b0f9e4abc9697f5830a [label="0-1000" shape=box]
+    id_91a48504788942519341afadbf61d7c1 [label="3yr" shape=box]
+    id_9d826574c78044c48cddffe914cc657b [label="2yr" shape=box]
+    id_9e887412378f4b99b655f2aaec537198 [label="1yr" shape=box]
+    id_8d2a6259a4e8485db3708225ec49b24f [label="16GB" shape=box]
+    id_c95f4a485ad440bca35bc8497c488db9 [label="8GB" shape=box]
+    id_befa70ce0487491ebe69d04053eabe47 [label="4GB" shape=box]
+    id_d27756d26454477f8bfb7f2366ff6c93 [label="16c" shape=box]
+    id_f172da289aa644fcad7f879beb9bd516 [label="4c" shape=box]
+    id_e17995d3ac0e481dabcf363339a709d9 [label="2c" shape=box]
+    id_b6669e750a044879ba0cebdd660e4ba8 [label=">5lbs" shape=box]
+    id_c6a389bdaa4344a4b68bf3d049619997 [label="<5lbs" shape=box]
+    id_866c7359b8124944916dbdf6feb39c4a [label="16in" shape=box]
+    id_0744e9e35a8a4b7d96a921dc35c5e3d2 [label="14in" shape=box]
+
+    
+    id_c9b3b8a0f24747afafef5ad102483b9a -> id_1804ae275f3643fe8e7f859aebf72af3
+    id_cf746e58b4f24387971be83e02bfe3cd -> id_1804ae275f3643fe8e7f859aebf72af3
+    id_cb1df3e9aa0945d1b9142f914c73f771 -> id_98fd6f0bc6e54405ae8d5d761c3d527c
+    id_9d735d56a99f467cb19323a0ad10d279 -> id_98fd6f0bc6e54405ae8d5d761c3d527c
+    id_1804ae275f3643fe8e7f859aebf72af3 -> id_98fd6f0bc6e54405ae8d5d761c3d527c
+    id_b3417654c3df4664aaf34dce39c71767 -> id_1690821797164536bf325dc5b870fc02
+    id_b3417654c3df4664aaf34dce39c71767 -> id_f89d72393b184324a0066c447476f40b
+    id_b3417654c3df4664aaf34dce39c71767 -> id_dadb0daa673f44fda25ef3c6403f2921
+    id_b3417654c3df4664aaf34dce39c71767 -> id_c559fca1882e4b2cb6b78e2d4a15636b
+    id_1690821797164536bf325dc5b870fc02 -> id_c95f4a485ad440bca35bc8497c488db9
+    id_f89d72393b184324a0066c447476f40b -> id_8d2a6259a4e8485db3708225ec49b24f
+    id_dadb0daa673f44fda25ef3c6403f2921 -> id_d27756d26454477f8bfb7f2366ff6c93
+    id_c559fca1882e4b2cb6b78e2d4a15636b -> id_9d826574c78044c48cddffe914cc657b
+    id_b30f751889104a7d988d20a3c8c8bcb2 -> id_aa613dce2b704111a2db13cced3e1864
+    id_b30f751889104a7d988d20a3c8c8bcb2 -> id_c1e1ff941e1f4039a848ba484b5ed395
+    id_b30f751889104a7d988d20a3c8c8bcb2 -> id_86d72b3f6bef4be29742b0ac8117bf32
+    id_b30f751889104a7d988d20a3c8c8bcb2 -> id_beec8e92287043dfbb8f4799b6086cf7
+    id_b30f751889104a7d988d20a3c8c8bcb2 -> id_9459de4d65f34970911fefa641bb19b3
+    id_b30f751889104a7d988d20a3c8c8bcb2 -> id_85615f4946544faa8be4aba5c7baf595
+    id_aa613dce2b704111a2db13cced3e1864 -> id_c95f4a485ad440bca35bc8497c488db9
+    id_c1e1ff941e1f4039a848ba484b5ed395 -> id_8d2a6259a4e8485db3708225ec49b24f
+    id_86d72b3f6bef4be29742b0ac8117bf32 -> id_8d2a6259a4e8485db3708225ec49b24f
+    id_beec8e92287043dfbb8f4799b6086cf7 -> id_d27756d26454477f8bfb7f2366ff6c93
+    id_9459de4d65f34970911fefa641bb19b3 -> id_d27756d26454477f8bfb7f2366ff6c93
+    id_85615f4946544faa8be4aba5c7baf595 -> id_91a48504788942519341afadbf61d7c1
+    id_6bf66f48919b4b0f9e4abc9697f5830a -> id_1d370edd44d142ec8806a2d8832133f8
+    id_8b14e74e3b5a4051b1467a6b95fcdacd -> id_1d370edd44d142ec8806a2d8832133f8
+    id_58cf0afcc0414101a195d9bffd7fa4f6 -> id_1d370edd44d142ec8806a2d8832133f8
+    id_9e887412378f4b99b655f2aaec537198 -> id_60604fd5fdb149c68c90193140cd5249
+    id_9d826574c78044c48cddffe914cc657b -> id_60604fd5fdb149c68c90193140cd5249
+    id_91a48504788942519341afadbf61d7c1 -> id_60604fd5fdb149c68c90193140cd5249
+    id_befa70ce0487491ebe69d04053eabe47 -> id_8e4ac328b3db4b1a9fa00cd2c1ca3b08
+    id_c95f4a485ad440bca35bc8497c488db9 -> id_8e4ac328b3db4b1a9fa00cd2c1ca3b08
+    id_8d2a6259a4e8485db3708225ec49b24f -> id_8e4ac328b3db4b1a9fa00cd2c1ca3b08
+    id_e17995d3ac0e481dabcf363339a709d9 -> id_478eef7b9e7a490da050827e94d94f3b
+    id_f172da289aa644fcad7f879beb9bd516 -> id_478eef7b9e7a490da050827e94d94f3b
+    id_d27756d26454477f8bfb7f2366ff6c93 -> id_478eef7b9e7a490da050827e94d94f3b
+    id_c6a389bdaa4344a4b68bf3d049619997 -> id_c9b3b8a0f24747afafef5ad102483b9a
+    id_b6669e750a044879ba0cebdd660e4ba8 -> id_c9b3b8a0f24747afafef5ad102483b9a
+    id_0744e9e35a8a4b7d96a921dc35c5e3d2 -> id_cf746e58b4f24387971be83e02bfe3cd
+    id_866c7359b8124944916dbdf6feb39c4a -> id_cf746e58b4f24387971be83e02bfe3cd
+    id_1d370edd44d142ec8806a2d8832133f8 -> id_cb1df3e9aa0945d1b9142f914c73f771
+    id_8e4ac328b3db4b1a9fa00cd2c1ca3b08 -> id_cb1df3e9aa0945d1b9142f914c73f771
+    id_478eef7b9e7a490da050827e94d94f3b -> id_cb1df3e9aa0945d1b9142f914c73f771
+    id_cf746e58b4f24387971be83e02bfe3cd -> id_cb1df3e9aa0945d1b9142f914c73f771
+    id_60604fd5fdb149c68c90193140cd5249 -> id_cb1df3e9aa0945d1b9142f914c73f771
+    id_478eef7b9e7a490da050827e94d94f3b -> id_9d735d56a99f467cb19323a0ad10d279
+    id_8e4ac328b3db4b1a9fa00cd2c1ca3b08 -> id_9d735d56a99f467cb19323a0ad10d279
+
+}

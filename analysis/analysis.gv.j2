@@ -1,0 +1,11 @@
+digraph {
+
+    {% for node in nodes %}
+    id_{{node.id}} [label="{{node.friendly}}" shape={{shapes.get(node.__class__.__name__,'box')}}]
+    {%- endfor %}
+
+    {% for edge in edges %}
+    id_{{edge.n2.id}} -> id_{{edge.n1.id}}
+    {%- endfor %}
+
+}
