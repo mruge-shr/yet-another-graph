@@ -1,0 +1,21 @@
+
+digraph {
+
+    
+    id_248afef2c9ae4440bf9cef350a2e23c6 [label="car"]
+    id_3343fb83b06748c388d73bb21ed71e85 [label="lx"]
+    id_f398915cfc5f4f6e93e4b5e7d7e0032c [label="ls"]
+    id_5741cc96ade646cea24747accab006fe [label="Features"]
+    id_2c250f988beb4f61935d757dc4fb7a80 [label="cost"]
+    id_48b46999197045c9aeea275b9f1198b7 [label="goal"]
+
+    
+    id_248afef2c9ae4440bf9cef350a2e23c6 -> id_3343fb83b06748c388d73bb21ed71e85 [label="0"]
+    id_248afef2c9ae4440bf9cef350a2e23c6 -> id_f398915cfc5f4f6e93e4b5e7d7e0032c [label="0"]
+    id_f398915cfc5f4f6e93e4b5e7d7e0032c -> id_2c250f988beb4f61935d757dc4fb7a80 [label="2"]
+    id_3343fb83b06748c388d73bb21ed71e85 -> id_2c250f988beb4f61935d757dc4fb7a80 [label="3"]
+    id_f398915cfc5f4f6e93e4b5e7d7e0032c -> id_5741cc96ade646cea24747accab006fe [label="2"]
+    id_3343fb83b06748c388d73bb21ed71e85 -> id_5741cc96ade646cea24747accab006fe [label="3"]
+    id_2c250f988beb4f61935d757dc4fb7a80 -> id_48b46999197045c9aeea275b9f1198b7 [label="-100"]
+    id_5741cc96ade646cea24747accab006fe -> id_48b46999197045c9aeea275b9f1198b7 [label="100"]
+}
