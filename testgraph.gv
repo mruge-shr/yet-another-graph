@@ -1,75 +1,75 @@
 
 digraph {
     
-    id_8b39e1c238d24690a3f369d2cca181c5 [label="Mac"]
-    id_2f009b676ab84588a7f0595dfa49d603 [label="8gb"]
-    id_6a20614a2330431da06ff7ea1d40ac1a [label="16gb"]
-    id_e81720e025a84c278b5281b98e43f15d [label="4c"]
-    id_8f0bc3b8d03f43ad9af9cacf62d95d60 [label="8c"]
-    id_a29bf0611ee14908be780509c3fe9524 [label="$2k"]
-    id_3344a7ce9f184915bb5249468c6e77f8 [label="mem"]
-    id_48a61bb5b461453c8720be4d061cf0ba [label="cpu"]
-    id_cfe1f98a4b8546aa82c7b72a53cd5ffb [label="cost"]
-    id_8a6101f40c0b44dd8e4281c243f2129b [label="cost"]
-    id_e3adde4b9357404b8586cb99fdc13dfb [label="performance"]
-    id_3476acf949fc4e7fae84497891de5750 [label="goal"]
+    id_2236c560ef3a4ac49da9f75f1936c673 [label="Mac"]
+    id_5a0c7bf9617f41408e2096d06c2b60b6 [label="8gb"]
+    id_6a0218d55fe649fd8a084d392b9993f5 [label="16gb"]
+    id_cb6283186e274e55b3587289c1106969 [label="4c"]
+    id_2c7732ff32414551a7d698dd0677d362 [label="8c"]
+    id_d58612f9276c4587ba34fc77bf31490f [label="$2k"]
+    id_eb62a2f361c543119ebb4b9f9fb85d8f [label="mem"]
+    id_6764d222af4d4bc69cdeb42249294cd2 [label="cpu"]
+    id_998eaa6056ce480a9aa6c19e2fe8bc40 [label="cost"]
+    id_f9694ab5cd3948d78b1207bf670071d2 [label="cost"]
+    id_6f3f3b86ead1477080d8cfc12b528baf [label="performance"]
+    id_8bbe4fe4b3fa452c95c27f4a0ee658c4 [label="goal"]
 
     
     
-    id_8b39e1c238d24690a3f369d2cca181c5 -> id_2f009b676ab84588a7f0595dfa49d603 [label="0"]
+    id_2236c560ef3a4ac49da9f75f1936c673 -> id_5a0c7bf9617f41408e2096d06c2b60b6 [label="0"]
     
     
-    id_8b39e1c238d24690a3f369d2cca181c5 -> id_6a20614a2330431da06ff7ea1d40ac1a [label="0"]
+    id_2236c560ef3a4ac49da9f75f1936c673 -> id_6a0218d55fe649fd8a084d392b9993f5 [label="0"]
     
     
-    id_8b39e1c238d24690a3f369d2cca181c5 -> id_e81720e025a84c278b5281b98e43f15d [label="0"]
+    id_2236c560ef3a4ac49da9f75f1936c673 -> id_cb6283186e274e55b3587289c1106969 [label="0"]
     
     
-    id_8b39e1c238d24690a3f369d2cca181c5 -> id_8f0bc3b8d03f43ad9af9cacf62d95d60 [label="0"]
+    id_2236c560ef3a4ac49da9f75f1936c673 -> id_2c7732ff32414551a7d698dd0677d362 [label="0"]
     
     
-    id_8b39e1c238d24690a3f369d2cca181c5 -> id_a29bf0611ee14908be780509c3fe9524 [label="0"]
+    id_2236c560ef3a4ac49da9f75f1936c673 -> id_d58612f9276c4587ba34fc77bf31490f [label="0"]
     
     
-    id_2f009b676ab84588a7f0595dfa49d603 -> id_3344a7ce9f184915bb5249468c6e77f8 [label="8"]
+    id_5a0c7bf9617f41408e2096d06c2b60b6 -> id_eb62a2f361c543119ebb4b9f9fb85d8f [label="8"]
     
     
-    id_6a20614a2330431da06ff7ea1d40ac1a -> id_3344a7ce9f184915bb5249468c6e77f8 [label="16"]
+    id_6a0218d55fe649fd8a084d392b9993f5 -> id_eb62a2f361c543119ebb4b9f9fb85d8f [label="16"]
     
     
-    id_e81720e025a84c278b5281b98e43f15d -> id_48a61bb5b461453c8720be4d061cf0ba [label="4"]
+    id_cb6283186e274e55b3587289c1106969 -> id_6764d222af4d4bc69cdeb42249294cd2 [label="4"]
     
     
-    id_8f0bc3b8d03f43ad9af9cacf62d95d60 -> id_48a61bb5b461453c8720be4d061cf0ba [label="8"]
+    id_2c7732ff32414551a7d698dd0677d362 -> id_6764d222af4d4bc69cdeb42249294cd2 [label="8"]
     
     
-    id_2f009b676ab84588a7f0595dfa49d603 -> id_cfe1f98a4b8546aa82c7b72a53cd5ffb [label="1"]
+    id_5a0c7bf9617f41408e2096d06c2b60b6 -> id_998eaa6056ce480a9aa6c19e2fe8bc40 [label="1"]
     
     
-    id_6a20614a2330431da06ff7ea1d40ac1a -> id_cfe1f98a4b8546aa82c7b72a53cd5ffb [label="8"]
+    id_6a0218d55fe649fd8a084d392b9993f5 -> id_998eaa6056ce480a9aa6c19e2fe8bc40 [label="8"]
     
     
-    id_e81720e025a84c278b5281b98e43f15d -> id_cfe1f98a4b8546aa82c7b72a53cd5ffb [label="1"]
+    id_cb6283186e274e55b3587289c1106969 -> id_998eaa6056ce480a9aa6c19e2fe8bc40 [label="1"]
     
     
-    id_8f0bc3b8d03f43ad9af9cacf62d95d60 -> id_cfe1f98a4b8546aa82c7b72a53cd5ffb [label="2"]
+    id_2c7732ff32414551a7d698dd0677d362 -> id_998eaa6056ce480a9aa6c19e2fe8bc40 [label="2"]
     
     
-    id_a29bf0611ee14908be780509c3fe9524 -> id_cfe1f98a4b8546aa82c7b72a53cd5ffb [label="200"]
+    id_d58612f9276c4587ba34fc77bf31490f -> id_998eaa6056ce480a9aa6c19e2fe8bc40 [label="200"]
     
     
-    id_3344a7ce9f184915bb5249468c6e77f8 -> id_e3adde4b9357404b8586cb99fdc13dfb [label="1"]
+    id_eb62a2f361c543119ebb4b9f9fb85d8f -> id_6f3f3b86ead1477080d8cfc12b528baf [label="1"]
     
     
-    id_48a61bb5b461453c8720be4d061cf0ba -> id_e3adde4b9357404b8586cb99fdc13dfb [label="1"]
+    id_6764d222af4d4bc69cdeb42249294cd2 -> id_6f3f3b86ead1477080d8cfc12b528baf [label="1"]
     
     
-    id_cfe1f98a4b8546aa82c7b72a53cd5ffb -> id_8a6101f40c0b44dd8e4281c243f2129b [label="1"]
+    id_998eaa6056ce480a9aa6c19e2fe8bc40 -> id_f9694ab5cd3948d78b1207bf670071d2 [label="1"]
     
     
-    id_8a6101f40c0b44dd8e4281c243f2129b -> id_3476acf949fc4e7fae84497891de5750 [label="0"]
+    id_f9694ab5cd3948d78b1207bf670071d2 -> id_8bbe4fe4b3fa452c95c27f4a0ee658c4 [label="0"]
     
     
-    id_e3adde4b9357404b8586cb99fdc13dfb -> id_3476acf949fc4e7fae84497891de5750 [label="0"]
+    id_6f3f3b86ead1477080d8cfc12b528baf -> id_8bbe4fe4b3fa452c95c27f4a0ee658c4 [label="0"]
     
 }
