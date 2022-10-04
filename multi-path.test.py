@@ -1,9 +1,11 @@
 import uuid, jinja2
 class Edge:
-    def __init__(self, a, b, cost=0):
+    def __init__(self, a, b, cost=0, operation='none'):
         self.a = a
         self.b = b 
-        self.cost = cost 
+        self.cost = cost
+        self.op = operation.upper()
+
     def __str__(self):
         return f"{self.a.name} -> {self.b.name} : {self.cost}"
 
@@ -65,59 +67,104 @@ def all_paths(goal, paths):
     else:
         return all_paths(goal,[Path(e) for e in edges if e.a == paths])
 
+def filter(paths):
+    groups = []
+    constraints = [e for e in edges if e.op != 'none']
+    for c in constraints:
+        if c.op == 'OR':
+            groups += [p for p in paths if p.contains(c.a) and p.not_contains(c.b)]
+            groups += [p for p in paths if p.not_contains(c.a) and p.contains(c.b)]
 
-def aggregate(paths):
-    options = {}
-    for path in paths:
-        options[path.index(1).id] = options.get(path.index(1).id, 0) + path.cost
-    return options
 
-    
 
-car = Node('car')
-lx = Node('lx')
-ls = Node('ls')
-features = Node('Features')
+# car = Node('car')
+# lx = Node('lx')
+# ls = Node('ls')
+# features = Node('Features')
+# cost = Node('cost')
+# goal = Node('goal')
+# base = Node('basecost')
+
+# e1 = Edge(car, lx)
+# e2 = Edge(car, ls)
+# c1 = Edge(lx, ls, operation='or')
+
+# e3 = Edge(ls, cost, -1)
+# e4 = Edge(lx, cost, -2)
+# e5 = Edge(ls, features, 5)
+# e6 = Edge(lx, features, 9)
+
+# e7 = Edge(cost, goal, 0)
+# e8 = Edge(features, goal, 0)
+
+# e10 = Edge(car, base)
+# e11 = Edge(base, cost, -10)
+# import gc
+# nodes = [obj for obj in gc.get_objects() if isinstance(obj, Node)]
+# edges = [obj for obj in gc.get_objects() if isinstance(obj, Edge)]
+
+
+# paths = all_paths(goal, car)
+# groups = filter(paths)
+
+
+
+mac = Node('Mac')
+s1 = Node('8gb')
+s2 = Node('16gb')
+s3 = Node('4c')
+s4 = Node('8c')
+s5 = Node('$2k')
+
+
+mem = Node('mem')
+cpu = Node('cpu')
 cost = Node('cost')
+
+
+group_cost = Node('cost')
+perf = Node('performance')
+
+edges = []
+edges += [Edge(mac, s1)]
+edges += [Edge(mac, s2)]
+edges += [Edge(mac, s3)]
+edges += [Edge(mac, s4)]
+edges += [Edge(mac, s5)]
+edges += [Edge(s1, mem, 8)]
+edges += [Edge(s2, mem, 16)]
+edges += [Edge(s3, cpu, 4)]
+edges += [Edge(s4, cpu, 8)]
+
+edges += [Edge(s1, cost, 1)]
+edges += [Edge(s2, cost, 8)]
+edges += [Edge(s3, cost, 1)]
+edges += [Edge(s4, cost, 2)]
+edges += [Edge(s5, cost, 200)]
+
+edges += [Edge(mem, perf, 1)]
+edges += [Edge(cpu, perf, 1)]
+edges += [Edge(cost, group_cost, 1)]
 goal = Node('goal')
+edges += [Edge(group_cost, goal)]
+edges += [Edge(perf, goal)]
 
-e1 = Edge(car, lx)
-e2 = Edge(car, ls)
-
-e3 = Edge(ls, cost, 2)
-e4 = Edge(lx, cost, 3)
-e5 = Edge(ls, features, 2)
-e6 = Edge(lx, features, 3)
-
-e7 = Edge(cost, goal, -100)
-e8 = Edge(features, goal, 100)
 
 import gc
 nodes = [obj for obj in gc.get_objects() if isinstance(obj, Node)]
-edges = [obj for obj in gc.get_objects() if isinstance(obj, Edge)]
-
-
-paths = all_paths(goal, car)
-options = aggregate(paths)
-# print(f"mypaths: {[str(p) for p in paths]}")
-for option in options:
-    print(f"{get_node(option)}: {options[option]}")
-
-# for path in :
-#     print(path)
-
-
-
-
+# edges = [obj for obj in gc.get_objects() if isinstance(obj, Edge)]
 j2 = """
 digraph {
-
     {% for node in nodes %}
     id_{{node.id}} [label="{{node.name}}"]
     {%- endfor %}
 
     {% for edge in edges %}
+    {% if edge.op == 'or' %}
+    id_{{edge.a.id}} -> id_{{edge.b.id}} [style="dashed" label="OR"]
+    {% else %}
     id_{{edge.a.id}} -> id_{{edge.b.id}} [label="{{edge.cost}}"]
+    {% endif %}
     {%- endfor %}
 }"""
 with open('testgraph.gv', 'w') as f:
